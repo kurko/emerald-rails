@@ -1,9 +1,20 @@
 Description:
-    Copies emerald.js to app/assets/javascripts/ directory. Recommended for
-    whom is going to edit or debug the code file.
+    Creates the following directories inside app/assets/javascripts/:
 
-Example:
+    - views/
+    - controllers/
+    - models/
+    - router/
+
+    If root_directory is provided, the directories will be nested inside it.
+
+Examples:
     rails generate emerald:install
 
     This will create:
-        app/assets/javascripts/emerald.js
+        app/assets/javascripts/views/
+
+    rails generate emerald:install admin
+
+    This will create:
+        app/assets/javascripts/admin/views/

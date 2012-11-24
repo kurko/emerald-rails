@@ -2,9 +2,19 @@ module Emerald
   module Generators
     class InstallGenerator < Rails::Generators::Base
       source_root File.expand_path('../templates', __FILE__)
+      argument :root_directory, :type => :string, :default => ""
 
-      def copy_emerald
-        copy_file "emerald.js", "app/assets/javascripts/emerald.js"
+      def create_directories
+        empty_directory "#{dir}/views/"
+        empty_directory "#{dir}/controllers/"
+        empty_directory "#{dir}/models/"
+        empty_directory "#{dir}/router/"
+      end
+
+      private
+
+      def dir
+        "app/assets/javascripts/#{root_directory}"
       end
     end
   end
