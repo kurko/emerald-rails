@@ -8,5 +8,6 @@ task :stable do
   cmd =  "cd #{assets_dir}"
   cmd << " && curl -O #{stable_url}"
   cmd << " && mv stable.js emerald.js"
+  cmd << " && cp emerald.js ../../../lib/generators/emerald/install/templates/emerald.js"
   exec cmd
 end
