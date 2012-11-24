@@ -1,6 +1,8 @@
-# Emerald::Rails
+# emerald-rails gem
 
-TODO: Write a gem description
+This gem integrates
+[Emerald.js](https://github.com/kurko/emerald.js)
+with your Rails application automagically.
 
 ## Installation
 
@@ -12,13 +14,15 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Then add this line to your Javascript manifest file (`application.js`)
+before your own scripts:
 
-    $ gem install emerald-rails
+    //= require emerald
 
 ## Usage
 
-TODO: Write usage instructions here
+For instructions on how to use Emerald.js, visit its page,
+[https://github.com/kurko/emerald.js](https://github.com/kurko/emerald.js).
 
 ## Contributing
 
@@ -27,3 +31,7 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+##License
+
+This software is released under the MIT License.
