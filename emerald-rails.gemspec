@@ -5,7 +5,7 @@ require 'emerald-rails/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "emerald-rails"
-  gem.version       = Emerald::Rails::VERSION
+  gem.version       = EmeraldRails::VERSION
   gem.authors       = ["Alexandre de Oliveira"]
   gem.email         = ["chavedomundo@gmail.com"]
   gem.description   = %q{Brings Emerald.js into your Rails app automagically}
