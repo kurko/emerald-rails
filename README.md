@@ -19,6 +19,22 @@ before your own scripts:
 
     //= require emerald
 
+Then run the Rails generator:
+
+    $ rails generate emerald:install
+
+If you want to nest the news directories, say in the admin/ directory,
+use instead:
+
+    $ rails generate emerald:install admin
+
+This will create the following directories:
+
+    app/assets/javascripts/admin/views/
+    app/assets/javascripts/admin/controllers/
+    app/assets/javascripts/admin/models/
+    app/assets/javascripts/admin/routers/
+
 ## Usage
 
 For instructions on how to use Emerald.js, visit its page,
